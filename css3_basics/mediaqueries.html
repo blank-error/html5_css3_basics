@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to css</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            color: red;
+            background-color: cyan;
+            font-size: 22px;
+        }
+        /* @media screen and (max-width: 800px) */
+        @media (min-width: 500px) and (max-width: 800px) {
+            div{
+                color: darkmagenta;
+                background-color: lightgray;
+                font-size: 22px;
+            }            
+        }
+        @media (min-width: 600px) and (max-width: 700px) {
+            div{
+                color: darkblue;
+                background-color: lightcoral;
+                font-size: 22px;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sit ipsa, numquam pariatur perferendis quam amet fuga
+        distinctio odio earum aliquid officia sint dolor quibusdam soluta. Error eum beatae distinctio?
+    </div>
+</body>
+</html>

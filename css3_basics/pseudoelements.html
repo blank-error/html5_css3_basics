@@ -1,0 +1,49 @@
+<!-- pseudo classes only 1 colon and pseudo elements 2 colons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to css</title>
+
+    <style>
+        h1{
+            margin: 30px 0 0 30px; /* 30 pixels from top and left side */
+        }
+        h1::selection{
+            color: hotpink;
+            background-color: indigo;
+            font-size: 30px;
+        }
+        h1::before{
+            content: "BEFORE";
+            color: greenyellow;
+            font-size: 20px;
+        }
+        h1::after{
+            content: "AFTER";
+            color: greenyellow;
+            font-size: 20px;
+        }
+        ::marker{
+            color: lime;
+        }
+        input::placeholder{
+            color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Worldo</h1>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+    </ul>
+    <input type="text" placeholder="username">
+</body>
+</html>

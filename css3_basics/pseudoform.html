@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to css</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            margin-left: 50px;
+        }
+        input{
+            outline: none;
+        }
+        input:focus{
+            background-color: lightgray;
+            color: red;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 0 0 10px 5px red;
+        }
+        input:disabled{
+            background-color: khaki;
+        }
+        input:required{
+            border: 2px solid green;
+        }
+        input:invalid{
+            box-shadow: 0 0 3px 3px green;
+        }
+        .textinput:read-only{
+            color: red;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Username</label><br>
+        <input type="text" value="Name" readonly class="textinput"><br>
+        <label for="">Password</label><br>
+        <input type="password" required><br>
+
+        <label for="">Email</label><br>
+        <input type="email" required><br>
+
+        <label for="">Hobbies</label>
+        <input type="checkbox">
+        <label for="">Running</label>
+        <input type="checkbox">
+        <label for="">Gym</label>
+        <input type="checkbox">
+        <label for="">Gaming</label><br>
+
+        <label for="">Number</label>
+        <input type="number" required><br>
+        <input type="submit"><br>
+    </form>
+</body>
+</html>

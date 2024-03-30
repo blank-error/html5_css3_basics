@@ -1,0 +1,43 @@
+<!-- DOM=Document Object Model -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to css</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo classes */
+        div ul li:nth-child(2n){
+            color: green;
+            background-color: lightgray;
+        }
+        div ul li:not(.li3){
+            background-color: brown;
+        }
+        .empty{
+            border: 3px solid red;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="empty"></div>
+    <div>
+        <ul>
+            <li>first</li>
+            <li>seconds</li>
+            <li class="li3">third</li>
+            <li>fourth</li>
+            <li>fifth</li>
+            <li>sixth</li>
+        </ul>
+    </div>
+    <div class="empty"></div>
+</body>
+</html>

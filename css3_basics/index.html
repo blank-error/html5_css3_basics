@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction of css</title>
+    <script
+        src="https://kit.fontawesome.com/39f013f64b.js"
+        crossorigin="anonymous"
+        ></script>
+    </script>
+    <!-- Part-1 -->
+    <style>
+        h2{
+            color: greenyellow;
+            background-color: palevioletred;
+        }
+    
+        /* Part of part-13 */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Dancing Script", cursive;
+        }
+        /* Part of part-13 */
+        @font-face {
+            font-family: "Dancing Script", cursive;
+            src: url(Dancing_Script/DancingScript-VariableFont_wght.ttf);
+        }
+
+    /* simple selector Part-2 */
+        
+        p{
+            color: hotpink;
+            background-color: limegreen;
+        }
+        .para1{
+            color: indigo;
+        }
+        #para2{
+            color: khaki;
+        }
+    
+    /* Part-3 */
+        
+        div{
+            background-color: lime;
+        }
+
+    /* Part-4 vh=viewport height and covers the height according to the screen*/
+        img{
+            width: 100%;
+            height: 100vh;  
+        }
+
+    /* Part-5 1 rem is 70 pixels */
+        div{
+            background-image: url(galaxy.jpg);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+            background-attachment: fixed;
+        }
+
+    /* Part-6 */
+        h1{
+            color: greenyellow;
+            background-color: hotpink;
+            border: 10px double red;
+            border-left: 5px solid green;
+            border-right: 5px solid blue;
+            border-top: 10px solid purple;
+            border-bottom: 10px solid gold;
+
+            margin-top: 10px;
+            border: 5px double blue;
+            outline: 10px solid red;
+        }
+
+    /* part-7 min and max height */
+        h1{
+            color: rebeccapurple;
+            background-color: cyan;
+            min-width: 100px;
+            max-width: 1200px;
+            min-height: 100px;
+            max-height: 200px;
+        }
+    
+    /* part-8 (padding=top bottom left right) (margin=top bottom right left)*/
+        h3{
+            color: grey;
+            background-color: yellow;
+            border: 2px solid orchid;
+            padding: 100px 20px 100px 20px;
+            margin: 100px 20px 0px 0px;
+        }
+        h1{
+            margin: 300px 0 0 500px;
+        }
+
+    /* part-9 text alignment */
+        .para1{
+            text-align: left;
+        }
+        .para2{
+            text-align: right;
+        }
+        .para3{
+            text-align: center;
+        }
+        .para4{
+            text-align: justify;
+            width: 200px;
+        }
+
+    /* part-10 text decoration (none removes the default underline)*/
+        a{
+            text-decoration: underline;
+        }
+        h1{
+            text-decoration: underline;
+        }
+
+    /* part-11 text transform */
+        h1{
+            text-transform: uppercase;
+        }
+        p{
+            text-transform: lowercase;
+        }
+        a{
+            text-transform: capitalize;
+        }
+
+    /* part-12 text spacing */
+        #para1{
+            text-indent: 100px;
+        }
+        p{
+            word-spacing: 20px;
+        }
+        h2{
+            letter-spacing: 5px;
+        }
+
+    /* part-13 font family */
+        p{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* part-14 font awesome icons */
+        .fas{
+            color: red;
+            background-color: yellow;
+            font-size: 50px;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Part-1 -->
+    <h1 style="color: aqua; background-color: green;">Hello World! (inline css)</h1>
+    <h2>Hello world for h2 (internal css)</h2>
+    <h3>Hello again (external css)</h3>
+    
+    <!-- Part-2 -->
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus quas consequuntur cum voluptas ea
+        asperiores, repellendus commodi quam corrupti, vitae sequi tempore odit beatae, exercitationem accusamus officiis
+        neque recusandae?
+    </p>
+    <p id="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia sunt maiores quod esse commodi voluptatem pariatur
+        iste aliquid deserunt veritatis expedita cum ex dolorem consequatur quasi sed nulla, voluptate ea.
+    </p>
+    <p>aaa</p>
+    <p>bbb</p>
+    <p>ccc</p>
+    <p>ddd</p>
+    <p>eee</p>
+
+    <!-- div tag coloring Part-3 -->
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore aspernatur illum molestiae mollitia
+        repellendus, fugiat quasi obcaecati in, praesentium saepe suscipit doloremque alias. Nostrum minus repellat soluta
+        at quidem.
+    </div>
+
+    <!-- Part-4 -->
+    <img src="images/galaxy.jpg" alt="image of galaxy">
+
+    <!-- Part-5 -->
+    <div>
+        <h1 style="color: red;">Hello this is background text</h1>
+    </div> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae nesciunt iste, voluptatum commodi minus
+        blanditiis porro voluptatem debitis consequatur adipisci accusamus laudantium sequi unde eum non impedit ea atque?
+    </p>
+
+    <!-- Part-6 -->
+    <h1>Hello World</h1>
+    <h1>Hello Again</h1>
+
+    <!-- Part-7 min and max height-->
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fuga. Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Tempore veritatis at aspernatur. Facere sapiente cumque consequatur expedita? Eius, pariatur odit. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Sapiente, rerum?
+    </h1>
+
+    <!-- part-8 margin and padding -->
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, eius. Saepe, soluta nam. Ea vitae doloremque
+        placeat, nam ut enim minima blanditiis iure architecto quia temporibus ipsum facere voluptatum sed.
+    </h3>
+    <h1>Helloooo</h1>
+
+    <!-- part-9 text alignment -->
+    <p class="para1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint quasi harum eaque natus maiores illum, modi
+        numquam quis delectus cumque, veritatis aperiam dolorem qui officia libero porro ipsa! Ipsa?
+    </p>
+    <p class="para2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint quasi harum eaque natus maiores illum, modi
+        numquam quis delectus cumque, veritatis aperiam dolorem qui officia libero porro ipsa! Ipsa?
+    </p>
+    <p class="para3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint quasi harum eaque natus maiores illum, modi
+        numquam quis delectus cumque, veritatis aperiam dolorem qui officia libero porro ipsa! Ipsa?
+    </p>
+    <p class="para4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint quasi harum eaque natus maiores illum, modi
+        numquam quis delectus cumque, veritatis aperiam dolorem qui officia libero porro ipsa! Ipsa?
+    </p>
+
+    <!-- part-10 text decoration -->
+    <a href="">Home Page</a>
+    <h1>Hello this is an underlined text</h1>
+
+    <!-- part-11 text transform -->
+    <h1>hello once again</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident sed consectetur, neque soluta rem
+        voluptates repellat amet nulla nesciunt quidem deleniti quaerat saepe nihil, laboriosam, nobis molestiae. Dicta,
+        nostrum.
+    </p>
+    <a href="">Click this page for a bonus</a>
+
+    <!-- part-12 text spacing -->
+    <p id="para1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, impedit perspiciatis? Eaque vero hic animi veniam
+        voluptatibus! Eveniet odio nisi adipisci non delectus expedita officia voluptas, quod explicabo beatae asperiores?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem veniam aut consequatur? A, autem ab velit
+        aperiam voluptas repudiandae.
+    </p>
+    <h2>This is just a sentence for text spacing</h2>
+
+    <!-- part-13 font family -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nihil maxime aut. Harum sit molestiae ea reiciendis
+        tenetur cupiditate exercitationem, at animi natus. In, similique quis omnis magnam provident autem.
+    </p>
+    <h1>Hellooo Worlddd</h1>
+    <a href="">This is not a page</a>
+
+    <!-- part-14 font awesome icons -->
+    <i class="fas fa-ad"></i>
+
+</body>
+</html>
